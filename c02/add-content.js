@@ -13,4 +13,17 @@ else if (animalage<10){
     greeting='fish';
 
 }
-document.write('<h3'+greeting+'</h3');
+document.write(greeting);
+
+ var m , n ,x;
+ m =2;
+n =3;
+x =n+m;
+ document.write('<h3>'+x+'</h3>');
+
+
+  var name ;
+ name='razan';
+ document.write(name);
+
+
