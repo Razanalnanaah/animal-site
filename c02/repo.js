@@ -39,3 +39,31 @@ var showtype = function() {
   // output
   return picture;
 }
+
+
+var showOrder = function() {
+  // input
+  var order = prompt('how often animals eat in the day? "cat" or "dog"?');
+  var pictures = ''; 
+  var total = NaN;
+
+  // processing
+  while (order !== 'cat' && order !== 'dog') {
+    order = prompt('Please enter "cat" or "dog"...');
+  }
+
+  while(isNaN(total)) {
+    total = prompt('How many would you like?');
+  }
+  
+  for(var models = 0; models < total; models = models + 1) {
+    if (order === 'cat') {
+      pictures = pictures + '<p><img src="https://images.theconversation.com/files/250711/original/file-20181214-185258-1czwsab.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip"></p>'
+    } else if (order === 'dog') {
+      pictures = pictures + '<p><img src="https://timesofindia.indiatimes.com/thumb/msid-60132235,imgsize-169468,width-800,height-600,resizemode-4/60132235.jpg"></p>'
+    }
+  }
+
+  // output
+  return pictures;
+}
