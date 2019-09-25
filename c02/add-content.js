@@ -1,4 +1,6 @@
-var animalage =prompt('animal age');
+
+//add content
+var animalage =prompt('animal age with nummber');
 
 var greeting;
 if (animalage>3 && animalage<2){
@@ -25,5 +27,3 @@ x =n+m;
   var name ;
  name='razan';
  document.write(name);
-
-
